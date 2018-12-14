@@ -5,6 +5,7 @@ It was forked from [`semantic-ui-sass`](https://github.com/doabit/semantic-ui-sa
 and is intended to be a drop-in replacement. The project keeps references to Semantic UI for that reason and because Fomantic UI intends to 
 merge back into Semantic UI once active development of Semantic begins again.
 
+[![Gem Version](https://badge.fury.io/rb/fomantic-ui-sass.svg)](https://badge.fury.io/rb/fomantic-ui-sass)
 [![Build Status](https://travis-ci.org/shanecav84/fomantic-ui-sass.svg?branch=master)](https://travis-ci.org/shanecav84/fomantic-ui-sass)
 
 ## NOTE
