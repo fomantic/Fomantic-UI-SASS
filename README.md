@@ -1,6 +1,6 @@
 # Fomantic UI for Sass
 
-`fomantic-ui-sass` is an Sass-powered version of [Fomantic UI](https://github.com/fomantic/Femantic-UI) and ready to drop into Rails, Compass, or Sprockets.
+`fomantic-ui-sass` is an Sass-powered version of [Fomantic UI](https://github.com/fomantic/Fomantic-UI) and ready to drop into Rails, Compass, or Sprockets.
 It was forked from [`semantic-ui-sass`](https://github.com/doabit/semantic-ui-sass) to track Fomantic UI, a community fork of Semantic UI,
 and is intended to be a drop-in replacement.
 
