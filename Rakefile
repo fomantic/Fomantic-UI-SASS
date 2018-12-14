@@ -1,7 +1,7 @@
-require "bundler/gem_tasks"
+require 'bundler/gem_tasks'
 
 desc 'Convert semantic-ui less to sass'
-task :convert, :branch do |t, args|
+task :convert, :branch do |_t, args|
   require './tasks/converter'
   branch = args[:branch]
   Converter.new(branch).process

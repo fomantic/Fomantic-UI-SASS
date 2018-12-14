@@ -1,4 +1,4 @@
-description "Semantic UI for Sass"
+description 'Semantic UI for Sass'
 
 # Stylesheet importing semantic
 stylesheet 'styles.scss'
@@ -8,7 +8,6 @@ basedir = '../../app/assets'
 image_dir = "#{basedir}/images/semantic-ui"
 javascript_dir = ["#{basedir}/javascripts/semantic-ui", "#{basedir}/javascripts/semantic-ui/behavior"]
 font_dir = "#{basedir}/fonts/semantic-ui"
-
 
 Dir[File.join(File.dirname(__FILE__), image_dir, '*.png')].each do |file|
   filename = File.basename(file)

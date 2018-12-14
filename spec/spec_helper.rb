@@ -1,13 +1,11 @@
-ENV["RAILS_ENV"] ||= 'test'
-require File.expand_path("../dummy/config/environment", __FILE__)
+ENV['RAILS_ENV'] ||= 'test'
+require File.expand_path('dummy/config/environment', __dir__)
 require 'rspec/rails'
 
-RSpec.configure do |config|
-  config.infer_spec_type_from_file_location!
-end
+RSpec.configure(&:infer_spec_type_from_file_location!)
 
 def normalize(str)
-  str.split("\n").map(&:strip).join("")
+  str.split("\n").map(&:strip).join('')
 end
 
 RSpec::Matchers.define :like_of do |expected|
