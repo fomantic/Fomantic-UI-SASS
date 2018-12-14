@@ -1,5 +1,5 @@
 /*!
- * # Semantic UI 2.4.0 - Modal
+ * # Semantic UI 2.6.4 - Modal
  * http://github.com/semantic-org/semantic-ui/
  *
  *
@@ -112,6 +112,8 @@
   -webkit-box-direction: normal;
       -ms-flex-direction: row;
           flex-direction: row;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
 }
 
 /* Image */
@@ -123,6 +125,7 @@
   width: '';
   -ms-flex-item-align: top;
       align-self: top;
+  max-width: 100%;
 }
 .ui.modal > [class*="top aligned"] {
   -ms-flex-item-align: top;
@@ -177,6 +180,9 @@
 }
 .ui.modal .actions > .button {
   margin-left: 0.75em;
+}
+.ui.basic.modal > .actions {
+  border-top: none;
 }
 
 /*-------------------
@@ -313,6 +319,7 @@
 .ui.basic.modal > .close {
   top: 1rem;
   right: 1.5rem;
+  color: #FFFFFF;
 }
 .ui.inverted.dimmer > .basic.modal {
   color: rgba(0, 0, 0, 0.87);
@@ -322,23 +329,16 @@
 }
 
 /* Resort to margin positioning if legacy */
-.ui.legacy.modal,
-.ui.legacy.page.dimmer > .ui.modal {
-  top: 50%;
-  left: 50%;
+.ui.legacy.legacy.modal,
+.ui.legacy.legacy.page.dimmer > .ui.modal {
+  top: 50% !important;
+  left: 50% !important;
 }
-.ui.legacy.page.dimmer > .ui.scrolling.modal,
-.ui.page.dimmer > .ui.scrolling.legacy.modal,
-.ui.top.aligned.legacy.page.dimmer > .ui.modal,
-.ui.top.aligned.dimmer > .ui.legacy.modal {
-  top: auto;
-}
-
-/* Tablet and Mobile */
-@media only screen and (max-width: 991px) {
-  .ui.basic.modal > .close {
-    color: #FFFFFF;
-  }
+.ui.legacy.legacy.page.dimmer > .ui.scrolling.modal,
+.ui.page.dimmer > .ui.scrolling.legacy.legacy.modal,
+.ui.top.aligned.legacy.legacy.page.dimmer > .ui.modal,
+.ui.top.aligned.dimmer > .ui.legacy.legacy.modal {
+  top: auto !important;
 }
 
 
@@ -399,13 +399,11 @@
   -webkit-box-pack: start;
       -ms-flex-pack: start;
           justify-content: flex-start;
+  position: fixed;
 }
 .scrolling.dimmable.dimmed > .dimmer {
   overflow: auto;
   -webkit-overflow-scrolling: touch;
-}
-.scrolling.dimmable > .dimmer {
-  position: fixed;
 }
 .modals.dimmer .ui.scrolling.modal {
   margin: 1rem auto;
@@ -437,11 +435,8 @@
 
 .ui.fullscreen.modal {
   width: 95% !important;
-  left: 0em !important;
+  left: 2.5% !important;
   margin: 1em auto;
-}
-.ui.fullscreen.scrolling.modal {
-  left: 0em !important;
 }
 .ui.fullscreen.modal > .header {
   padding-right: 2.25rem;
@@ -450,6 +445,9 @@
   top: 1.0535rem;
   right: 1rem;
   color: rgba(0, 0, 0, 0.87);
+}
+.ui.basic.fullscreen.modal > .close {
+  color: #FFFFFF;
 }
 
 /*--------------
@@ -497,8 +495,8 @@
   }
 }
 
-/* mini */
-.ui.small.modal > .header:not(.ui) {
+/* Tiny */
+.ui.tiny.modal > .header:not(.ui) {
   font-size: 1.3em;
 }
 
@@ -604,6 +602,35 @@
     width: 1140px;
     margin: 0em 0em 0em 0em;
   }
+}
+
+
+/*****************************
+          Inverted
+*******************************/
+
+.ui.inverted.modal {
+  background: rgba(0, 0, 0, 0.9);
+}
+.ui.inverted.modal > .header,
+.ui.inverted.modal > .content {
+  background: rgba(0, 0, 0, 0.9);
+  color: #FFFFFF;
+}
+.ui.inverted.modal > .actions {
+  background: #191A1B;
+  border-top: 1px solid rgba(34, 36, 38, 0.85);
+}
+.ui.inverted.dimmer > .modal > .close {
+  color: rgba(0, 0, 0, 0.85);
+}
+@media only screen and (max-width: 991px) {
+  .ui.dimmer .inverted.modal > .close {
+    color: #FFFFFF;
+  }
+}
+.ui.inverted.fullscreen.modal > .close {
+  color: #FFFFFF;
 }
 
 
