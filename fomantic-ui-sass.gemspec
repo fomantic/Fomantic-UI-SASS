@@ -1,16 +1,16 @@
 # coding: utf-8
 lib = File.expand_path('../lib', __FILE__)
 $LOAD_PATH.unshift(lib) unless $LOAD_PATH.include?(lib)
-require 'semantic/ui/sass/version'
+require 'fomantic/ui/sass/version'
 
 Gem::Specification.new do |spec|
-  spec.name          = "semantic-ui-sass"
-  spec.version       = Semantic::Ui::Sass::VERSION
+  spec.name          = "fomantic-ui-sass"
+  spec.version       = Fomantic::Ui::Sass::VERSION
   spec.authors       = ["doabit"]
   spec.email         = ["doinsist@gmail.com"]
-  spec.description   = %q{Semantic UI, converted to Sass and ready to drop into Rails, Compass, or Sprockets.}
-  spec.summary       = %q{Semantic UI, converted to Sass and ready to drop into Rails, Compass, or Sprockets.}
-  spec.homepage      = "http://github.com/doabit/semantic-ui-sass"
+  spec.description   = %q{Fomantic UI, converted to Sass and ready to drop into Rails, Compass, or Sprockets.}
+  spec.summary       = %q{Fomantic UI, converted to Sass and ready to drop into Rails, Compass, or Sprockets.}
+  spec.homepage      = "http://github.com/shanecav84/fomantic-ui-sass"
   spec.license       = "MIT"
 
   spec.files         = `git ls-files`.split($/)

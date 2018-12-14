@@ -19,7 +19,7 @@ class Converter
 
 
   def initialize(branch)
-    @repo               = 'Semantic-Org/Semantic-UI'
+    @repo               = 'fomantic/Fomantic-UI'
     @repo_url           = "https://github.com/#@repo"
     @branch             = branch || 'master'
     @git_data_trees     = "#{GIT_DATA}/#{@repo}/git/trees"
@@ -48,7 +48,7 @@ class Converter
     if Dir.exist?(paths.tmp_semantic_ui)
       system %Q{cd '#{paths.tmp_semantic_ui}' && git fetch --quiet}
     else
-      system %Q{git clone --quiet git@github.com:Semantic-Org/Semantic-UI.git '#{paths.tmp_semantic_ui}'}
+      system %Q{git clone --quiet git@github.com:fomantic/Fomantic-UI.git '#{paths.tmp_semantic_ui}'}
     end
   end
 
@@ -151,7 +151,7 @@ private
   end
 
   def store_version
-    path = 'lib/semantic/ui/sass/version.rb'
+    path = 'lib/fomantic/ui/sass/version.rb'
     content = File.read(path).sub(/SEMANTIC_UI_SHA\s*=\s*['"][\w]+['"]/, "SEMANTIC_UI_SHA = '#@branch_sha'")
     File.open(path, 'w') { |f| f.write(content) }
   end

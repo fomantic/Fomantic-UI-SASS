@@ -1,8 +1,10 @@
-# Semantic UI for Sass
+# Fomantic UI for Sass
 
-`semantic-ui-sass` is an Sass-powered version of [Semantic UI](https://github.com/Semantic-Org/Semantic-UI) and ready to drop into Rails, Compass, or Sprockets.
+`fomantic-ui-sass` is an Sass-powered version of [Fomantic UI](https://github.com/fomantic/Femantic-UI) and ready to drop into Rails, Compass, or Sprockets.
+It was forked from [`semantic-ui-sass`](https://github.com/doabit/semantic-ui-sass) to track Fomantic UI, a community fork of Semantic UI,
+and is intended to be a drop-in replacement.
 
-[![Build Status](https://travis-ci.org/doabit/semantic-ui-sass.svg?branch=master)](https://travis-ci.org/doabit/semantic-ui-sass)
+[![Build Status](https://travis-ci.org/shanecav84/fomantic-ui-sass.svg?branch=master)](https://travis-ci.org/shanecav84/fomantic-ui-sass)
 
 ## NOTE
 
@@ -11,12 +13,12 @@ The gem only has default theme.
 ## Installation and Usage
 
 ```ruby
-gem 'semantic-ui-sass'
+gem 'fomantic-ui-sass'
 ```
 
 `bundle install` and restart your server to make the files available through the pipeline.
 
-# semantic-ui-sass with Rails or Sprockets
+# fomantic-ui-sass with Rails or Sprockets
 
 ## CSS
 
@@ -75,7 +77,7 @@ You can also load individual modules, provided you also require any dependencies
 //= require semantic-ui/dropdown
 ```
 
-# semantic-ui-sass with Compass
+# fomantic-ui-sass with Compass
 
 ## New project
 
@@ -97,7 +99,7 @@ This will sort a few things out:
 Install the gem, add the require statement to the top of your configuration file, and install the extension.
 
 ```console
-gem install semantic-ui-sass
+gem install fomantic-ui-sass
 ```
 
 ```ruby

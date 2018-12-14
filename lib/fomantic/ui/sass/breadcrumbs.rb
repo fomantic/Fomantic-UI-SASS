@@ -1,4 +1,4 @@
-module Semantic
+module Fomantic
   module Ui
     module Sass
 

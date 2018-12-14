@@ -8,7 +8,7 @@ require "sprockets/railtie"
 # require "rails/test_unit/railtie"
 
 Bundler.require(*Rails.groups)
-require "semantic-ui-sass"
+require "fomantic-ui-sass"
 
 module Dummy
   class Application < Rails::Application

@@ -1,13 +1,13 @@
-module Semantic
+module Fomantic
   module Ui
     module Sass
       class FrameworkNotFound < StandardError; end
       class << self
         def load!
           if defined?(::Rails)
-            require 'semantic/ui/sass/engine'
+            require 'fomantic/ui/sass/engine'
           elsif defined?(::Compass)
-            ::Compass::Frameworks.register('semantic-ui', :path => base, :stylesheets_directory => stylesheets_path, :templates_directory => templates_path)
+            ::Compass::Frameworks.register('fomantic-ui', :path => base, :stylesheets_directory => stylesheets_path, :templates_directory => templates_path)
           elsif defined?(::Sprockets)
             Sprockets.append_path(stylesheets_path)
             Sprockets.append_path(fonts_path)
@@ -17,7 +17,7 @@ module Semantic
 
           configure_sass
           if !(defined?(::Rails) || defined?(::Compass) || defined?(::Sprockets))
-            raise Semantic::Ui::Sass::FrameworkNotFound, "semantic-ui-sass requires either Rails > 3.1 or Compass, or Sprockets, none of which are loaded"
+            raise Fomantic::Ui::Sass::FrameworkNotFound, "fomantic-ui-sass requires either Rails > 3.1 or Compass, or Sprockets, none of which are loaded"
           end
         end
 
@@ -59,4 +59,4 @@ module Semantic
     end
   end
 end
-Semantic::Ui::Sass.load!
+Fomantic::Ui::Sass.load!
