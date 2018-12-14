@@ -1,5 +1,5 @@
 /*!
- * # Semantic UI 2.4.0 - Feed
+ * # Semantic UI 2.6.4 - Feed
  * http://github.com/semantic-org/semantic-ui/
  *
  *
@@ -115,10 +115,10 @@
 .ui.feed > .event > .content .date {
   margin: -0.5rem 0em 0em;
   padding: 0em;
+  color: rgba(0, 0, 0, 0.4);
   font-weight: normal;
   font-size: 1em;
   font-style: normal;
-  color: rgba(0, 0, 0, 0.4);
 }
 
 /*--------------
@@ -280,6 +280,25 @@
 }
 .ui.large.feed {
   font-size: 1.14285714rem;
+}
+
+/*------------------
+      Inverted
+-------------------*/
+
+.ui.inverted.feed > .event {
+  background: #1B1C1D;
+}
+.ui.inverted.feed > .event > .content .date,
+.ui.inverted.feed > .event > .content .meta .like {
+  color: rgba(255, 255, 255, 0.7);
+}
+.ui.inverted.feed > .event > .content .summary,
+.ui.inverted.feed > .event > .content .extra.text {
+  color: rgba(255, 255, 255, 0.9);
+}
+.ui.inverted.feed > .event > .content .meta .like:hover {
+  color: #ffffff;
 }
 
 

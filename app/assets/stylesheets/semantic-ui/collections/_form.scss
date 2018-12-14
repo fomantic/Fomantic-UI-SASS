@@ -1,5 +1,5 @@
 /*!
- * # Semantic UI 2.4.0 - Form
+ * # Semantic UI 2.6.4 - Form
  * http://github.com/semantic-org/semantic-ui/
  *
  *
@@ -133,6 +133,7 @@
   -webkit-transition: color 0.1s ease, border-color 0.1s ease;
   transition: color 0.1s ease, border-color 0.1s ease;
   font-size: 1em;
+  font-family: $font-family;
   line-height: 1.2857;
   resize: vertical;
 }
@@ -144,6 +145,28 @@
 .ui.form textarea,
 .ui.form input[type="checkbox"] {
   vertical-align: top;
+}
+
+/*--------------------
+      Transparent
+---------------------*/
+
+.ui.form .field .transparent.input input,
+.ui.form .field input.transparent,
+.ui.form .field textarea.transparent {
+  padding: 0.67857143em 1em !important;
+}
+.ui.form .field textarea.transparent {
+  border-color: transparent !important;
+  background-color: transparent !important;
+  -webkit-box-shadow: none !important;
+          box-shadow: none !important;
+}
+.ui.form .field.error .transparent.input input,
+.ui.form .field.error input.transparent,
+.ui.form .field.error textarea.transparent {
+  background-color: #FFF6F6 !important;
+  color: #9F3A38 !important;
 }
 
 /*--------------------------
@@ -180,6 +203,7 @@
 
 /* Block */
 .ui.form .field > .selection.dropdown {
+  min-width: auto;
   width: 100%;
 }
 .ui.form .field > .selection.dropdown > .dropdown.icon {
@@ -678,14 +702,16 @@
 .ui.form .required.fields.grouped > label:after,
 .ui.form .required.field > label:after,
 .ui.form .required.fields:not(.grouped) > .field > .checkbox:after,
-.ui.form .required.field > .checkbox:after {
+.ui.form .required.field > .checkbox:after,
+.ui.form label.required:after {
   margin: -0.2em 0em 0em 0.2em;
   content: '*';
   color: #DB2828;
 }
 .ui.form .required.fields:not(.grouped) > .field > label:after,
 .ui.form .required.fields.grouped > label:after,
-.ui.form .required.field > label:after {
+.ui.form .required.field > label:after,
+.ui.form label.required:after {
   display: inline-block;
   vertical-align: top;
 }
@@ -1064,6 +1090,58 @@
   font-size: 1.42857143rem;
 }
 .ui.massive.form {
+  font-size: 1.71428571rem;
+}
+
+/* Dropdown */
+.ui.mini.form .field .dropdown {
+  font-size: 0.78571429rem;
+}
+.ui.tiny.form .field .dropdown {
+  font-size: 0.85714286rem;
+}
+.ui.small.form .field .dropdown {
+  font-size: 0.92857143rem;
+}
+.ui.form .field .dropdown {
+  font-size: 1rem;
+}
+.ui.large.form .field .dropdown {
+  font-size: 1.14285714rem;
+}
+.ui.big.form .field .dropdown {
+  font-size: 1.28571429rem;
+}
+.ui.huge.form .field .dropdown {
+  font-size: 1.42857143rem;
+}
+.ui.massive.form .field .dropdown {
+  font-size: 1.71428571rem;
+}
+
+/* Dropdown Items */
+.ui.mini.form .field .dropdown .menu > .item {
+  font-size: 0.78571429rem;
+}
+.ui.tiny.form .field .dropdown .menu > .item {
+  font-size: 0.85714286rem;
+}
+.ui.small.form .field .dropdown .menu > .item {
+  font-size: 0.92857143rem;
+}
+.ui.form .field .dropdown .menu > .item {
+  font-size: 1rem;
+}
+.ui.large.form .field .dropdown .menu > .item {
+  font-size: 1.14285714rem;
+}
+.ui.big.form .field .dropdown .menu > .item {
+  font-size: 1.28571429rem;
+}
+.ui.huge.form .field .dropdown .menu > .item {
+  font-size: 1.42857143rem;
+}
+.ui.massive.form .field .dropdown .menu > .item {
   font-size: 1.71428571rem;
 }
 
