@@ -18,14 +18,15 @@ Gem::Specification.new do |spec|
   spec.test_files    = spec.files.grep(%r{^(test|spec|features)/})
   spec.require_paths = ["lib"]
 
+  spec.add_runtime_dependency 'autoprefixer-rails'
+  spec.add_runtime_dependency 'rails', '>= 3.2.0'
+  spec.add_runtime_dependency 'sass', '>= 3.2'
+  spec.add_runtime_dependency 'sass-rails', '>= 3.2'
+  spec.add_runtime_dependency 'sprockets-rails', '>= 2.1.3'
+
   spec.add_development_dependency "bundler", ">= 1.3"
   spec.add_development_dependency "rake"
-  spec.add_runtime_dependency     'sass',       '>= 3.2'
-  spec.add_development_dependency 'sass-rails', '>= 3.2'
-  spec.add_development_dependency 'sprockets-rails', '>= 2.1.3'
   spec.add_development_dependency 'pry'
   spec.add_development_dependency 'dotenv'
   spec.add_development_dependency 'rspec-rails', '>= 3.0'
-  spec.add_development_dependency "rails", '>= 3.2.0'
-  spec.add_development_dependency "autoprefixer-rails"
 end
