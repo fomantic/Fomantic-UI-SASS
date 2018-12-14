@@ -6,8 +6,8 @@ require 'fomantic/ui/sass/version'
 Gem::Specification.new do |spec|
   spec.name          = "fomantic-ui-sass"
   spec.version       = Fomantic::Ui::Sass::VERSION
-  spec.authors       = ["doabit"]
-  spec.email         = ["doinsist@gmail.com"]
+  spec.authors       = ["doabit", "shanecav84"]
+  spec.email         = ["doinsist@gmail.com", "shane@shanecav.net"]
   spec.description   = %q{Fomantic UI, converted to Sass and ready to drop into Rails, Compass, or Sprockets.}
   spec.summary       = %q{Fomantic UI, converted to Sass and ready to drop into Rails, Compass, or Sprockets.}
   spec.homepage      = "http://github.com/shanecav84/fomantic-ui-sass"
