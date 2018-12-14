@@ -337,7 +337,7 @@ $.fn.search = function(parameters) {
               apiSettings = {
                 debug             : settings.debug,
                 on                : false,
-                cache             : settings.cache,
+                cache             : true,
                 action            : 'search',
                 urlData           : {
                   query : searchTerm

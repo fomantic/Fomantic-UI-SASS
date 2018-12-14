@@ -267,7 +267,7 @@
   display: inline-block;
   font-size: 1em !important;
   float: none;
-  margin: 0em 0.75em 0em 0em !important;
+  margin: 0em 0.75em 0em 0em;
 }
 
 /* Secondary */
@@ -485,7 +485,7 @@ Floated Menu / Item
 
 /* Left Floated */
 .ui.menu:not(.vertical) .left.item,
-.ui.menu:not(.vertical) :not(.dropdown) > .left.menu {
+.ui.menu:not(.vertical) .left.menu {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -2044,6 +2044,37 @@ Floated Menu / Item
          Theme Overrides
 *******************************/
 
+
+/*-------------------
+  Inverted dropdowns
+--------------------*/
+
+.ui.menu .ui.inverted.inverted.dropdown.item .menu {
+  background: #1B1C1D;
+  -webkit-box-shadow: none;
+          box-shadow: none;
+}
+.ui.menu .ui.inverted.dropdown .menu > .item {
+  color: rgba(255, 255, 255, 0.8) !important;
+}
+.ui.menu .ui.inverted.dropdown .menu > .active.item {
+  background: transparent !important;
+  color: rgba(255, 255, 255, 0.8) !important;
+}
+.ui.menu .ui.inverted.dropdown .menu > .item:hover {
+  background: rgba(255, 255, 255, 0.08) !important;
+  color: rgba(255, 255, 255, 0.8) !important;
+}
+.ui.menu .ui.inverted.dropdown .menu > .selected.item {
+  background: rgba(255, 255, 255, 0.15) !important;
+  color: rgba(255, 255, 255, 0.8) !important;
+}
+
+/* Vertical */
+.ui.vertical.menu .inverted.dropdown.item .menu {
+  -webkit-box-shadow: none;
+          box-shadow: none;
+}
 
 
 /*******************************
