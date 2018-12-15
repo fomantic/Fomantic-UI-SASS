@@ -1,4 +1,10 @@
-require 'bundler/gem_tasks'
+begin
+  require 'bundler/setup'
+rescue LoadError
+  puts 'You must `gem install bundler` and `bundle install` to run rake tasks'
+end
+
+Bundler::GemHelper.install_tasks
 
 desc 'Convert semantic-ui less to sass'
 task :convert, :branch do |_t, args|
