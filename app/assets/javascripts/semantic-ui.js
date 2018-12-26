@@ -11,12 +11,12 @@
 //= require semantic-ui/nag
 //= require semantic-ui/popup
 //= require semantic-ui/progress
-//= require semantic-ui/range
 //= require semantic-ui/rating
 //= require semantic-ui/search
 //= require semantic-ui/shape
 //= require semantic-ui/sidebar
 //= require semantic-ui/site
+//= require semantic-ui/slider
 //= require semantic-ui/state
 //= require semantic-ui/sticky
 //= require semantic-ui/tab
