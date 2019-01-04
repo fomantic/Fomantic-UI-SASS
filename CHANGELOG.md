@@ -1,3 +1,19 @@
+## 2.7.1
+
+* Update Fomantic UI to [2.7.1](https://github.com/fomantic/Fomantic-UI/releases/tag/2.7.1)
+
+## 2.7.0
+
+* Update Fomantic UI to [2.7.0](https://github.com/fomantic/Fomantic-UI/releases/tag/2.7.0)
+
+## 2.6.4
+
+* Update Fomantic UI to [2.6.4](https://github.com/fomantic/Fomantic-UI/releases/tag/2.6.4)
+
+## 2.4.1
+
+* Update Fomantic UI to [2.4.1](https://github.com/fomantic/Fomantic-UI/releases/tag/2.4.1)
+
 ## 2.4.0.1
 
 * Include new placeholder element #133
