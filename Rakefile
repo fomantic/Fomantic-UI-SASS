@@ -10,6 +10,7 @@ desc 'Convert semantic-ui less to sass'
 task :convert, :branch do |_t, args|
   require './tasks/converter'
   branch = args[:branch]
+  puts "Converting branch #{branch}"
   Converter.new(branch).process
 end
 
