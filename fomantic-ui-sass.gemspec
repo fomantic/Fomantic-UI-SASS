@@ -9,7 +9,7 @@ Gem::Specification.new do |spec|
   spec.email         = ['doinsist@gmail.com', 'shane@shanecav.net']
   spec.description   = 'Fomantic UI, converted to Sass and ready to drop into Rails, Compass, or Sprockets.'
   spec.summary       = 'Fomantic UI, converted to Sass and ready to drop into Rails, Compass, or Sprockets.'
-  spec.homepage      = 'http://github.com/shanecav84/fomantic-ui-sass'
+  spec.homepage      = 'https://github.com/fomantic/Fomantic-UI-SASS'
   spec.license       = 'MIT'
 
   spec.files         = `git ls-files`.split($INPUT_RECORD_SEPARATOR)
