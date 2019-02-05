@@ -38,25 +38,25 @@ You can also include modules
 
 ## Custom font
 
-```css
+```scss
 $font-url: 'http://fonts.useso.com/css?family=Lato:400,700,400italic,700italic&subset=latin';
 @import 'semantic-ui';
 ```
 
 ## Skip font loading
-```css
+```scss
 $import-google-fonts: false;
 @import 'semantic-ui';
 ```
 
 ## Custom font family
-```css
+```scss
 $font-family: 'custom-font-family';
 @import 'semantic-ui';
 ```
 
 ## All variables, you can custom any of that
-```css
+```scss
 $import-google-fonts: true !default;
 $font-url: 'https://fonts.googleapis.com/css?family=Lato:400,700,400italic,700italic&subset=latin,latin-ext' !default;
 $font-name: 'Lato' !default;
