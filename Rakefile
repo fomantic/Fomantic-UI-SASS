@@ -6,6 +6,7 @@ end
 
 Bundler::GemHelper.install_tasks
 
+# rake convert[2.7.1]
 desc 'Convert semantic-ui less to sass'
 task :convert, :branch do |_t, args|
   require './tasks/converter'
