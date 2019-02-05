@@ -86,8 +86,8 @@ You can also load individual modules, provided you also require any dependencies
 Install the gem and create a new project using the gem.
 
 ```console
-gem install semantic-ui-sass
-compass create compass-project -r semantic-ui-sass --using semantic-ui
+gem install fomantic-ui-sass
+compass create compass-project -r fomantic-ui-sass --using semantic-ui
 ```
 
 This will sort a few things out:
@@ -106,7 +106,7 @@ gem install fomantic-ui-sass
 
 ```ruby
 # In config.rb
-require 'semantic-ui-sass'
+require 'fomantic-ui-sass'
 ```
 
 ```console
