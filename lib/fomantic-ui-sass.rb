@@ -6,8 +6,6 @@ module Fomantic
         def load!
           if defined?(::Rails)
             require 'fomantic/ui/sass/engine'
-          elsif defined?(::Compass)
-            ::Compass::Frameworks.register('fomantic-ui', path: base, stylesheets_directory: stylesheets_path, templates_directory: templates_path)
           elsif defined?(::Sprockets)
             Sprockets.append_path(stylesheets_path)
             Sprockets.append_path(fonts_path)
@@ -16,8 +14,8 @@ module Fomantic
           end
 
           configure_sass
-          unless defined?(::Rails) || defined?(::Compass) || defined?(::Sprockets)
-            raise Fomantic::Ui::Sass::FrameworkNotFound, 'fomantic-ui-sass requires either Rails > 3.1 or Compass, or Sprockets, none of which are loaded'
+          unless defined?(::Rails) || defined?(::Sprockets)
+            raise Fomantic::Ui::Sass::FrameworkNotFound, 'fomantic-ui-sass requires either Rails > 3.1 or Sprockets, neither of which are loaded'
           end
         end
 

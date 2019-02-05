@@ -1,6 +1,6 @@
 # Fomantic UI for Sass
 
-`fomantic-ui-sass` is an Sass-powered version of [Fomantic UI](https://github.com/fomantic/Fomantic-UI) and ready to drop into Rails, Compass, or Sprockets.
+`fomantic-ui-sass` is an Sass-powered version of [Fomantic UI](https://github.com/fomantic/Fomantic-UI) and ready to drop into Rails or Sprockets.
 It was forked from [`semantic-ui-sass`](https://github.com/doabit/semantic-ui-sass) to track Fomantic UI, a community fork of Semantic UI,
 and is intended to be a drop-in replacement. The project keeps references to Semantic UI for that reason and because Fomantic UI intends to 
 merge back into Semantic UI once active development of Semantic begins again.
@@ -78,44 +78,6 @@ You can also load individual modules, provided you also require any dependencies
 //= require semantic-ui/modal
 //= require semantic-ui/dropdown
 ```
-
-# fomantic-ui-sass with Compass
-
-## New project
-
-Install the gem and create a new project using the gem.
-
-```console
-gem install fomantic-ui-sass
-compass create compass-project -r fomantic-ui-sass --using semantic-ui
-```
-
-This will sort a few things out:
-
-* You'll get a starting `styles.scss`
-* You'll get a compiled stylesheet compiled & ready to drop into your application
-* We'll also copy the Semantic javascripts & images & fonts into their respective folders for you
-
-## Existing project
-
-Install the gem, add the require statement to the top of your configuration file, and install the extension.
-
-```console
-gem install fomantic-ui-sass
-```
-
-```ruby
-# In config.rb
-require 'fomantic-ui-sass'
-```
-
-```console
-compass install semantic-ui
-```
-
-### NOTE
-
-When using compass, you should visit file in local server, eg `http://localhost:3000/index.html`, rather than `file:///Users/doabit/demo/index.html`
 
 # Rails Helpers
 

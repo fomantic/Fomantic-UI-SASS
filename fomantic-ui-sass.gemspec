@@ -7,8 +7,8 @@ Gem::Specification.new do |spec|
   spec.version       = Fomantic::Ui::Sass::VERSION
   spec.authors       = %w[doabit shanecav84]
   spec.email         = ['doinsist@gmail.com', 'shane@shanecav.net']
-  spec.description   = 'Fomantic UI, converted to Sass and ready to drop into Rails, Compass, or Sprockets.'
-  spec.summary       = 'Fomantic UI, converted to Sass and ready to drop into Rails, Compass, or Sprockets.'
+  spec.description   = 'Fomantic UI, converted to Sass and ready to drop into Rails or Sprockets.'
+  spec.summary       = 'Fomantic UI, converted to Sass and ready to drop into Rails or Sprockets.'
   spec.homepage      = 'https://github.com/fomantic/Fomantic-UI-SASS'
   spec.license       = 'MIT'
 
