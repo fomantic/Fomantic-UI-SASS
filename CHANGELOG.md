@@ -1,3 +1,7 @@
+## 2.7.7
+
+Update Fomantic UI to [2.7.7](https://github.com/fomantic/Fomantic-UI/releases/tag/2.7.7)
+
 ## 2.7.6
 
 Update Fomantic UI to [2.7.6](https://github.com/fomantic/Fomantic-UI/releases/tag/2.7.6)
