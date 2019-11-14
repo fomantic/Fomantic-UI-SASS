@@ -13,9 +13,7 @@
              Page
 *******************************/
 
-@if $import-google-fonts {
-  @import url($font-url);
-}
+@import url('https://fonts.googleapis.com/css?family=Lato:400,700,400italic,700italic&subset=latin&display=swap');
 html,
 body {
   height: 100%;
