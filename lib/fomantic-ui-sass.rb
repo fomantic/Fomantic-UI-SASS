@@ -51,8 +51,8 @@ module Fomantic
         end
 
         def configure_sass
-          require 'sass'
-          ::Sass.load_paths << stylesheets_path
+          require 'sassc'
+          ::SassC.load_paths << stylesheets_path
         end
       end
     end
