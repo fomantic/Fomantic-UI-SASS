@@ -19,8 +19,8 @@ Gem::Specification.new do |spec|
 
   spec.add_runtime_dependency 'autoprefixer-rails'
   spec.add_runtime_dependency 'rails', '>= 3.2.0'
-  spec.add_runtime_dependency 'sass', '>= 3.2'
-  spec.add_runtime_dependency 'sass-rails', '>= 3.2'
+  spec.add_runtime_dependency 'sassc', '>= 2.2'
+  spec.add_runtime_dependency 'sassc-rails', '>= 2.1'
   spec.add_runtime_dependency 'sprockets-rails', '>= 2.1.3'
 
   spec.add_development_dependency 'bundler', '>= 1.3'
