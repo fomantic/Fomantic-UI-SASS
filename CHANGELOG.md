@@ -1,3 +1,11 @@
+## 2.8.3
+
+Update Fomantic UI to [2.8.3](https://github.com/fomantic/Fomantic-UI/releases/tag/2.8.3)
+
+## 2.8.2
+
+Update Fomantic UI to [2.8.2](https://github.com/fomantic/Fomantic-UI/releases/tag/2.8.2)
+
 ## 2.8.1.1
 
 Replace the deprecated `sass` gem with its drop-in replacement `sassc` [#3](https://github.com/fomantic/Fomantic-UI-SASS/pull/3) (thanks @n-b!)
