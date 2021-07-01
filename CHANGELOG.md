@@ -1,3 +1,7 @@
+## 2.8.7.1
+
+* import `text` element
+
 ## 2.8.7
 
 Update Fomantic UI to [2.8.7](https://github.com/fomantic/Fomantic-UI/releases/tag/2.8.7)
