@@ -170,6 +170,12 @@ semantic_icon('add', id: 'id')
 * Add global variables
 * Add rails helpers like `render_flash`?
 
+## Versioning
+
+The version for Fomantic-UI-SASS tracks the version for Fomantic-UI. The first
+three digits indicate the major, minor, and patch version of Fomantic-UI. The fourth
+digit indicates a patch release for Fomantic-UI-SASS.
+
 ## Contributing
 
 1. Fork it
