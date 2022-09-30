@@ -18,7 +18,7 @@ Gem::Specification.new do |spec|
   spec.require_paths = ['lib']
 
   spec.add_runtime_dependency 'autoprefixer-rails'
-  spec.add_runtime_dependency 'rails', '>= 3.2.0'
+  spec.add_runtime_dependency 'railties', '>= 3.2.0'
   spec.add_runtime_dependency 'sassc', '>= 2.2'
   spec.add_runtime_dependency 'sassc-rails', '>= 2.1'
   spec.add_runtime_dependency 'sprockets-rails', '>= 2.1.3'
