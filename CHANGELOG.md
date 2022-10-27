@@ -1,3 +1,7 @@
+## 2.8.8.1
+
+gemspec: Depend on railties rather that rails #15 (thanks @Kjarrigan)
+
 ## 2.8.8
 
 Update Fomantic UI to [2.8.8](https://github.com/fomantic/Fomantic-UI/releases/tag/2.8.8)
