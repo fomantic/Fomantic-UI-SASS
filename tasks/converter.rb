@@ -137,7 +137,7 @@ class Converter
   end
 
   def open_git_file(file)
-    open(file).read
+    URI.open(file).read
   end
 
   def store_version
