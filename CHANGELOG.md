@@ -1,3 +1,7 @@
+## 2.9.3
+
+Update Fomantic UI to [2.9.3](https://github.com/fomantic/Fomantic-UI/releases/tag/2.9.3)
+
 ## 2.9.2
 
 Update Fomantic UI to [2.9.2](https://github.com/fomantic/Fomantic-UI/releases/tag/2.9.2)
