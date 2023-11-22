@@ -15,7 +15,6 @@ module Fomantic
             Sprockets.append_path(javascripts_path)
           end
 
-          configure_sass
           unless defined?(::Rails) || defined?(::Compass) || defined?(::Sprockets)
             raise Fomantic::Ui::Sass::FrameworkNotFound, 'fomantic-ui-sass requires either Rails > 3.1 or Compass, or Sprockets, none of which are loaded'
           end
@@ -48,11 +47,6 @@ module Fomantic
 
         def stylesheets_path
           File.join(assets_path, 'stylesheets')
-        end
-
-        def configure_sass
-          require 'sassc'
-          ::SassC.load_paths << stylesheets_path
         end
       end
     end
