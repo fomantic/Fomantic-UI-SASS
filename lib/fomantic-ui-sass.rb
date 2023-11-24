@@ -5,18 +5,10 @@ module Fomantic
       class << self
         def load!
           if defined?(::Rails)
-            require 'dartsass-rails'
             require 'fomantic/ui/sass/engine'
-
-            if ::Rails.application.present?
-              ::Rails.application.config.dartsass.builds = {
-                'semantic-ui.scss' => 'semantic-ui.css'
-              }
-            end
           elsif defined?(::Compass)
             ::Compass::Frameworks.register('fomantic-ui', path: base, stylesheets_directory: stylesheets_path, templates_directory: templates_path)
           elsif defined?(::Sprockets)
-            require 'dartsass-sprockets'
             Sprockets.append_path(stylesheets_path)
             Sprockets.append_path(fonts_path)
             Sprockets.append_path(images_path)
