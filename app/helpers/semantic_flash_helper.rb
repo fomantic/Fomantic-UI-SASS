@@ -1,3 +1,5 @@
+# frozen_string_literal: true
+
 module SemanticFlashHelper
   ALERT_TYPES = %i[error info success warning].freeze
 

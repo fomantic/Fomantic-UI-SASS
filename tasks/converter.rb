@@ -1,3 +1,5 @@
+# frozen_string_literal: true
+
 # Based on convert script from vwall/compass-twitter-bootstrap gem.
 # https://github.com/vwall/compass-twitter-bootstrap/blob/#{@branch}/build/convert.rb
 
@@ -12,8 +14,8 @@ require 'pathname'
 Dotenv.load
 
 class Converter
-  GIT_DATA = 'https://api.github.com/repos'.freeze
-  GIT_RAW  = 'https://raw.githubusercontent.com'.freeze
+  GIT_DATA = 'https://api.github.com/repos'
+  GIT_RAW  = 'https://raw.githubusercontent.com'
   TOKEN    = ENV['TOKEN']
 
   def initialize(branch)
@@ -116,9 +118,7 @@ class Converter
     file = replace_import_font_url(file)
     file = replace_font_family(file)
     file = replace_image_urls(file)
-    file = replace_image_paths(file)
-
-    file
+    replace_image_paths(file)
   end
 
   def save_file(name, content, path, _type = 'stylesheets')
@@ -142,12 +142,12 @@ class Converter
 
   def store_version
     path = 'lib/fomantic/ui/sass/version.rb'
-    content = File.read(path).sub(/SEMANTIC_UI_SHA\s*=\s*['"][\w]+['"]/, "SEMANTIC_UI_SHA = '#{@branch_sha}'")
+    content = File.read(path).sub(/SEMANTIC_UI_SHA\s*=\s*['"]\w+['"]/, "SEMANTIC_UI_SHA = '#{@branch_sha}'")
     File.open(path, 'w') { |f| f.write(content) }
   end
 
   def replace_fonts_url(less)
-    less.gsub(%r{url\(\"\./\.\./themes/default/assets/fonts/?(.*?)\"\)}) { |_s| "font-url(\"semantic-ui/#{Regexp.last_match(1)}\")" }
+    less.gsub(%r{url\("\./\.\./themes/default/assets/fonts/?(.*?)"\)}) { |_s| "font-url(\"semantic-ui/#{Regexp.last_match(1)}\")" }
   end
 
   def replace_font_family(less)
@@ -171,18 +171,8 @@ class Converter
 end
 
 class Paths
-  attr_reader :root
-  attr_reader :tmp
-  attr_reader :tmp_semantic_ui
-  attr_reader :tmp_semantic_ui_src
-  attr_reader :tmp_semantic_ui_definitions
-  attr_reader :tmp_semantic_ui_dist
-  attr_reader :tmp_semantic_ui_components
-
-  attr_reader :fonts
-  attr_reader :images
-  attr_reader :javascripts
-  attr_reader :stylesheets
+  attr_reader :root, :tmp, :tmp_semantic_ui, :tmp_semantic_ui_src, :tmp_semantic_ui_definitions, :tmp_semantic_ui_dist, :tmp_semantic_ui_components, :fonts, :images,
+              :javascripts, :stylesheets
 
   def initialize
     @root = File.expand_path('..', __dir__)

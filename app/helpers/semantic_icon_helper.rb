@@ -1,3 +1,5 @@
+# frozen_string_literal: true
+
 module SemanticIconHelper
   def semantic_icon(*names)
     opts = names[-1].is_a?(Hash) ? names.delete_at(-1) : {}

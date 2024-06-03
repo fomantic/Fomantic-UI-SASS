@@ -1,3 +1,5 @@
+# frozen_string_literal: true
+
 description 'Semantic UI for Sass'
 
 # Stylesheet importing semantic

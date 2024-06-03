@@ -1,3 +1,5 @@
+# frozen_string_literal: true
+
 lib = File.expand_path('lib', __dir__)
 $LOAD_PATH.unshift(lib) unless $LOAD_PATH.include?(lib)
 require 'fomantic/ui/sass/version'
@@ -18,8 +20,8 @@ Gem::Specification.new do |spec|
   spec.require_paths = ['lib']
 
   spec.add_runtime_dependency 'autoprefixer-rails'
-  spec.add_runtime_dependency 'railties', '>= 3.2.0'
   spec.add_runtime_dependency 'dartsass-sprockets', '3.0.0'
+  spec.add_runtime_dependency 'railties', '>= 3.2.0'
   spec.add_runtime_dependency 'sprockets-rails', '>= 2.1.3'
 
   spec.add_development_dependency 'bundler', '>= 1.3'

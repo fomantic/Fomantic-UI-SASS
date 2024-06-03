@@ -1,3 +1,5 @@
+# frozen_string_literal: true
+
 module SemanticBreadcrumbsHelper
   def semantic_breadcrumbs(divider = '/', &block)
     content = render partial: 'semantic/breadcrumbs', layout: false, locals: { divider: divider }
