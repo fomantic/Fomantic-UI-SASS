@@ -1,3 +1,7 @@
+## 2.9.3.1
+
+Replace SassC with Dartsass [#17](https://github.com/fomantic/Fomantic-UI-SASS/pull/17)
+
 ## 2.9.3
 
 Update Fomantic UI to [2.9.3](https://github.com/fomantic/Fomantic-UI/releases/tag/2.9.3)
