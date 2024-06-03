@@ -13,6 +13,7 @@ Gem::Specification.new do |spec|
   spec.summary       = 'Fomantic UI, converted to Sass and ready to drop into Rails, Compass, or Sprockets.'
   spec.homepage      = 'https://github.com/fomantic/Fomantic-UI-SASS'
   spec.license       = 'MIT'
+  spec.required_ruby_version = '>= 2.7.0'
 
   spec.files         = `git ls-files`.split($INPUT_RECORD_SEPARATOR)
   spec.executables   = spec.files.grep(%r{^bin/}) { |f| File.basename(f) }
