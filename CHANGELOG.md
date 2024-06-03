@@ -1,3 +1,7 @@
+## 2.9.3.2
+
+Upgrade dartsass-sprockets
+
 ## 2.9.3.1
 
 Replace SassC with Dartsass [#17](https://github.com/fomantic/Fomantic-UI-SASS/pull/17)
